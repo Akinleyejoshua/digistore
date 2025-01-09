@@ -20,7 +20,7 @@ export default function Page() {
             id: 1,
             name: "Ultra SaaS Template",
             price: 100,
-            discount: 70,
+            discount: 0.1,
             currency: data.currency,
             currencySymbol: data.currencySymbol,
             image: SaaSLogo,
@@ -72,7 +72,7 @@ export default function Page() {
         reference: (new Date()).getTime().toString(),
         email: email,
         amount: productData.discount * 100 * rates,
-        publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+        publicKey: process.env.NEXT_PUBLIC_PAYSTACK_LIVE_KEY,
     };
 
     const download = () => {
