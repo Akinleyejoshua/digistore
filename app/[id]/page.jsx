@@ -24,6 +24,7 @@ export default function Page() {
             currency: data.currency,
             currencySymbol: data.currencySymbol,
             image: SaaSLogo,
+            link: "https://saas-template-v0.vercel.app",
             description: `This is a beautiful SaaS template that you can use to build your next project. It is built with Next.js`
         },
     ])
@@ -96,6 +97,7 @@ export default function Page() {
                 <div className={styles.productInfo}>
                     <h1>{productData.name}</h1>
                     <p>{productData.description}</p>
+                    <a target="_blank" href={productData.link}>VIEW DEMO</a>
                     <div className={styles.priceContainer}>
                         {productData.discount ? (
                             <>
