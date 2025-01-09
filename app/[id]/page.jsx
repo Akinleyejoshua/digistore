@@ -24,7 +24,7 @@ export default function Page() {
             currency: data.currency,
             currencySymbol: data.currencySymbol,
             image: SaaSLogo,
-            link: "https://saas-template-v0.vercel.app",
+            link: "https://saas-templatev0.vercel.app",
             description: `This is a beautiful SaaS template that you can use to build your next project. It is built with Next.js`
         },
     ])
