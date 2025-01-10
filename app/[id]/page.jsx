@@ -26,7 +26,7 @@ export default function Page() {
             currencySymbol: data.currencySymbol,
             image: SaaSLogo,
             downloads: "500+",
-            views: "5000+",
+            views: "500+",
             link: "https://saas-template-v0.vercel.app",
             description: `This is a beautiful SaaS template that you can use to build your next project`
         },
