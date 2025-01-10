@@ -28,7 +28,7 @@ export default function Page() {
             downloads: "500+",
             views: "5000+",
             link: "https://saas-template-v0.vercel.app",
-            description: `This is a beautiful SaaS template that you can use to build your next project. It is built with Next.js`
+            description: `This is a beautiful SaaS template that you can use to build your next project`
         },
     ])
     const [rates, setRates] = useState(0);
