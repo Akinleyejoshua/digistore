@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 import SaaSLogo from "@/public/imgs/saas-template-v0.png"
 import dynamic from "next/dynamic";
+import { FaDownload, FaEye } from "react-icons/fa";
 const PaystackButton = dynamic(() => import('react-paystack').then(mode => mode.PaystackButton), { ssr: false })
 
 export default function Page() {
@@ -24,7 +25,9 @@ export default function Page() {
             currency: data.currency,
             currencySymbol: data.currencySymbol,
             image: SaaSLogo,
-            link: "https://saas-templatev0.vercel.app",
+            downloads: "500+",
+            views: "5000+",
+            link: "https://saas-template-v0.vercel.app",
             description: `This is a beautiful SaaS template that you can use to build your next project. It is built with Next.js`
         },
     ])
@@ -98,6 +101,18 @@ export default function Page() {
                     <h1>{productData.name}</h1>
                     <p>{productData.description}</p>
                     <a target="_blank" href={productData.link}>VIEW DEMO</a>
+
+                    <div className={styles.metricsBar}>
+                        <div className={styles.metric}>
+                            <FaEye className={styles.metricIcon} />
+                            <span>{productData.views || 0} views</span>
+                        </div>
+                        <div className={styles.metricDivider} />
+                        <div className={styles.metric}>
+                            <FaDownload className={styles.metricIcon} />
+                            <span>{productData.downloads || 0} downloads</span>
+                        </div>
+                    </div>
                     <div className={styles.priceContainer}>
                         {productData.discount ? (
                             <>
@@ -141,7 +156,7 @@ export default function Page() {
                                         setDownloaded(true);
                                         download()
                                     }}
-                                    text="Purchase Now"
+                                    text="Download Now"
                                     className={styles.payButton}
                                 />
                             }
