@@ -21,7 +21,7 @@ export default function Page() {
             id: 1,
             name: "Ultra SaaS Template",
             price: 200,
-            discount: 70,
+            discount: 47,
             currency: data.currency,
             currencySymbol: data.currencySymbol,
             image: SaaSLogo,
