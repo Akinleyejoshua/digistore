@@ -130,6 +130,7 @@ export default function Page() {
                             </span>
                         )}
                     </div>
+                    <a target="blank" href="https://digitpay.vercel.app">DONATION</>
                     {downloaded ?
                         <button onClick={download} className={styles.payButton}>Download</button>
                         :
@@ -170,3 +171,4 @@ export default function Page() {
         </div>
     );
 }
+
